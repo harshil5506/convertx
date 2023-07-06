@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convertx</title>
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        }
+        /* header css */
+        .maintext{
+            color: white;
+            background-color: darkblue;
+            padding: 30px;
+            line-height: 35px;
+            
+        }
+        
+        .maintext h1{
+            display: flex;
+            justify-content: center;
+        }
+        .maintext p{
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+        /* main page css */
+        body{
+            background-color: white;
+            color: darkblue;
+            height: 100vh;
+        }
+        .submain{
+            color: black;
+            width: 280px;
+            height: 280px;
+            margin: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 70px;
+            
+
+        }
+        
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+        }
+        .text-ctr{
+            text-align: center;
+            padding: 5px 0 ;
+        }
+        li{
+            margin-left: 30px;
+        }
+        .submain button{
+            cursor: pointer;
+            width: 280px;
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        margin-top: 3px;
+        border-radius: 20px;
+        
+        background-color: darkblue;
+            
+        }
+        .submain button a{
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+        padding: 10px;
+        color: white;
+        }
+        .submain img{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        footer{
+            color: white;
+            background-color: darkblue;
+            margin:35px 0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+        
+        }
+        
+        /* .e{
+            background-image: url(images_eng.png);
+            background-size: cover;
+        }
+        .w{
+            background-image: url(image_weight.png);
+            background-size: cover;
+        }
+        .t{
+            background-image: url(image_temp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+        .submain img:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 5px #00000040;
+        }
+        .submain button:hover{
+            box-shadow: 0 0 5px black;
+        }
+        /* .box_l:hover{
+            background-color: rgb(105, 104, 104);
+            border-radius: 15px;
+            
+        }
+        .box_e:hover{
+            background-color: rgb(105, 104, 104);
+            border-radius: 15px;
+
+        }
+        .box_w:hover{
+            background-color: rgb(105, 104, 104);
+            border-radius: 15px;
+
+        }
+        .box_t:hover{
+            background-color: rgb(105, 104, 104);
+            border-radius: 15px;
+
+        } */
+        
+        
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="maintext">
+            <h1>ConvertX</h1>
+            <p> converting made easy!</p>
+        </div>
+    </header>
+    <div class="main">
+        <div class="box_l">
+    <div class=" submain" >
+        <a href="length.html"><img src="images_len.png" alt="measuring tape"></a>
+<button> <a href="length.html"> Convert length</a> </button>
+
+    </div>
+</div>
+<div class="box_e">
+    <div class="submain ">
+        <a href="energy.html"><img src="images_eng.png" alt=""></a>
+        <button><a href="energy.html">Convert energy</a></button>
+        
+    </div>
+</div>
+<div class="box_w">
+    <div class="submain ">
+        <a href="weight.html"><img src="image_weight1.jpg" alt=""></a>
+
+        <button><a href="weight.html"> Convert weight</a></button>
+        
+    </div>
+</div>
+<div class="box_t">
+    <div class="submain ">
+        <a href="temp.html"><img src="image_temp1.png" alt=""></a>
+        <button><a href="temp.html"> Convert temperature</a></button>
+         
+    </div>
+</div>
+    </div>
+
+    <p ><h3 class="text-ctr">ConvertX</h3></p>
+
+    <p class="text-ctr">ConvertX is a website which has multiple options to convert different types of data into different formats.</p>
+    <p class=" text-ctr"> For example:</p>
+    <p class="text-ctr">Converting C to F, Kg to Pounds, etc</p>
+    <h1 class="text-ctr">Why Choose ConvertX?</h1>
+    <ul>
+        <li>Easy to use interface</li>
+        <li>Multiple conversion options</li>
+        <li>Fast and accurate results</li>
+    </ul>
+    <h1 class="text-ctr">How to Use ConvertX</h1>
+    <ol>
+        <li>Select the type of conversion you want to perform from the buttons above</li>
+        <li>Enter the value you want to convert</li>
+        <li>Select the units you want to convert from and to</li>
+        <li>Click the "Convert" button</li>
+        <li>View your converted value</li>
+    </ol>
+    <footer>
+        <h4>Created by :Harshil Thakkar
+        </h4>
+    </footer>
+    
+</body>
+</html>

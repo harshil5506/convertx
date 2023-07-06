@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weight</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        }
+header{
+    background-color: darkblue;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 30px;
+    line-height: 45px;
+}
+.head p{
+    font-size: 30px;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+}
+.head h1{
+    display:flex;
+    justify-content: center;
+    padding: 4px 0;
+}
+body{
+    background-color: white;
+    color: darkblue;
+    
+    
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 40px auto 5px auto;
+    flex-direction: column;
+    background-color: darkblue;
+    color: white;
+}
+.main h2{
+    margin: 25px 0;
+}
+.main input{
+    width: 450px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.main select{
+    width: 450px;
+    height: 50px;
+    font-size: 25px;
+    border-radius:10px ;
+    padding-left: 15px;
+}
+.main button{
+    background-color: darkblue;
+    margin: 15px;
+    width: 85%;
+    height: 55px;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border-color: white;
+    box-shadow: 0 0 5px white;
+
+}
+.submain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    background-color: darkblue;
+    margin: 0 auto;
+    color: white;
+}
+footer{
+            color: white;
+            background-color: darkblue;
+            margin:35px 0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+        
+        }
+        
+/* Small devices (phones, landscape phones, and small tablets) */
+@media screen and (max-width: 767px) {
+    header {
+        padding: 15px;
+        line-height: 25px;
+    }
+    .head h1 {
+        font-size: 24px;
+    }
+    .head p {
+        font-size: 16px;
+    }
+    .main {
+        width: 90%;
+    }
+    .main h2 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .main input,
+    .main select {
+        width: 100%;
+        font-size: 18px;
+    }
+    .main button {
+        width: 90%;
+        height: 45px;
+        font-size: 24px;
+    }
+    .submain {
+        width: 90%;
+        height: auto;
+    }
+    footer {
+        padding: 10px;
+    }
+    footer h4 {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets and small laptops) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        width: 70%;
+    }
+}
+
+/* Large devices (desktops and larger laptops) */
+@media screen and (min-width: 1024px) {
+    .main {
+        width: 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1> Weight converter</h1>
+            <p>Converts length from centimeters to meters and to kilometers and visa versa</p>
+        </div>
+    </header>
+    <div class="main">
+        <h2>Weight:</h2>
+        <input type="text" placeholder="Enter length">
+        <h2>Unit:</h2>
+        <select>
+            <option> kilogram</option>
+            <option>pounds</option>
+        </select>
+        <button>convert</button>
+    </div>
+    <div class="submain">
+        <h2>results</h2>
+    </div>
+    <footer>
+        <h4>Created by :Harshil Thakkar
+        </h4>
+    </footer>
+</body>
+</html>
